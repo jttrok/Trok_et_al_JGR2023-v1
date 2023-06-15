@@ -6,31 +6,30 @@ Trok, J. T., Davenport, F. V., Barnes, E. A., & Diffenbaugh, N. S. (2023). Using
 
 Please contact Jared Trok at trok@stanford.edu with any questions about the code.
 
-####################################################################
 # Download and Process ERA5/ERA5-Land Data
 
 Scripts: 
 
-0_make_region_dir.sh: 
+- 0_make_region_dir.sh: 
     - run this script with "bash 0_make_region_dir.sh" to create nested directories for input data
     
-1_check_for_missing_files.ipynb:
+- 1_check_for_missing_files.ipynb:
     - prints all missing input files
     
-2_queue_missing_requests.ipynb:
+- 2_queue_missing_requests.ipynb:
     - for each missing file, sends a download request to the Climate Data Store
     - check the status of requests at https://cds.climate.copernicus.eu/#!/home
 
-3_download_missing_requests.ipynb:
+- 3_download_missing_requests.ipynb:
     - downloads completed requests from https://cds.climate.copernicus.eu/#!/home
     - run this notebook after requests have finished processing
 
-4_convert_hourly_2_daily.ipynb:
+- 4_convert_hourly_2_daily.ipynb:
     - aggregates all hourly files to daily files
     - for geopotential height and soil moisture we calculate daily means
     - for 2-meter temperature we calculate daily maximums
 
-5_regrid_to_ncep_t62.ipynb:
+- 5_regrid_to_ncep_t62.ipynb:
     - converts all daily data files to the t62 gaussian grid used by the NCEP-R2 reanalysis
     - this script uses gauss.grid.nc as the target grid
     
