@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "final_cnn"
+version = "0.1.1"
+description = "A python environment w/ all dependencies to run CNN installed within a conda environment with python/3.9.x and proj/8.2.0"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+tensorflow = ">=2.7"
+jupyter-server-proxy = "*"
+scikit-learn = "*"
+pandas = "*"
+jupyterlab = "*"
+matplotlib = "*"
+jupyter = "*"
+jupytext = "*"
+netcdf4 = "*"
+regionmask = "*"
+xarray = "*"
+dask = "*"
+statsmodels = "*"
+nodejs = "*"
+pyproj = "*"
+denseweight = "^0.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
