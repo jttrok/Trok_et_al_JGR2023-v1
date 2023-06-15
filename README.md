@@ -8,7 +8,7 @@ Trok, J. T., Davenport, F. V., Barnes, E. A., & Diffenbaugh, N. S. (2023). Using
 
 Please contact Jared Trok at trok@stanford.edu with any questions about the code.
 
-### subdirectories
+# Directories
 The project directory is organized into the following subdirectories:
 
 - input_data_ERA5: 
@@ -36,26 +36,34 @@ The project directory is organized into the following subdirectories:
     - functions called within jupyter notebooks
     - these are used to build the CNN, load CNN inputs, load CNN hyperparameters, etc.
     
-### Python Environments: 
+# Python Environments: 
 
 Prior to running these scripts, it is necessary to create a python environment with all the dependencies listed in the "pyproject.toml" file.
 
 We recommend using Poetry (https://python-poetry.org/docs/) to manage this python environment. 
 
-(1) Download and install Poetry (instructions at https://python-poetry.org/docs/)
-(2) Create a new Poetry environment
-(3) Replace the newly created pyproject.toml and poetry.lock file those provided in this directory
-(4) Run "poetry update" from the command line
+1. Download and install Poetry (instructions at https://python-poetry.org/docs/)
+
+2. Create a new Poetry environment
+
+3. Replace the newly created pyproject.toml and poetry.lock file those provided in this directory
+
+4. Run "poetry update" from the command line
 
 Note: This Poetry environment may need to be installed within a conda environment with python/3.9.x and proj/8.2.0.
 
 Note: A separate environment with cartopy is needed to run "5_figures_ERA5.ipynb" and "5_figures_NCEP.ipynb".
 
-### Steps to perform this analysis:
+# Steps to perform this analysis:
 
 1. Install all necessary dependencies in a python environment (see above)
+
 2. Install project_utils/ in python environment using the command: "pip install -e . --user"
+
 3. Download ERA5/ERA5-Land reanalysis data by running the scripts in input_data_ERA5/
+
 4. Download NCEP-NCAR-R2 reanalysis data by running the scripts in input_data_NCEP/
+
 5. Run "0a_make_region_dir.sh" in "processed_data_ERA5/" and "processed_data_NCEP/"
+
 6. Run the notebooks contained in notebooks/
