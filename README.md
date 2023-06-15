@@ -1,6 +1,5 @@
 # Using machine learning and partial dependence analysis to investigate coupling between soil moisture and near-surface temperature
 
-####################################################################
 Supporting code for Trok et al. (2023) "Using machine learning and partial dependence analysis to investigate coupling between soil moisture and near-surface temperature"
 
 To Cite:
@@ -8,7 +7,6 @@ To Cite:
 Trok, J. T., Davenport, F. V., Barnes, E. A., & Diffenbaugh, N. S. (2023). Using Machine Learning with Partial Dependence Analysis to Investigate Coupling Between Soil Moisture and Near-surface Temperature. Journal of Geophysical Research: Atmospheres, 128, e2022JD038365. https://doi.org/10.1029/2022JD038365
 
 Please contact Jared Trok at trok@stanford.edu with any questions about the code.
-####################################################################
 
 ### subdirectories
 The project directory is organized into the following subdirectories:
@@ -38,7 +36,6 @@ The project directory is organized into the following subdirectories:
     - functions called within jupyter notebooks
     - these are used to build the CNN, load CNN inputs, load CNN hyperparameters, etc.
     
-####################################################################
 ### Python Environments: 
 
 Prior to running these scripts, it is necessary to create a python environment with all the dependencies listed in the "pyproject.toml" file.
@@ -54,7 +51,6 @@ Note: This Poetry environment may need to be installed within a conda environmen
 
 Note: A separate environment with cartopy is needed to run "5_figures_ERA5.ipynb" and "5_figures_NCEP.ipynb".
 
-####################################################################
 ### Steps to perform this analysis:
 
 1. Install all necessary dependencies in a python environment (see above)
